@@ -1,0 +1,82 @@
+main{
+    padding-bottom: 13px!important;
+    .countryWise-score{
+        padding: 0 10px;
+        &__content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color:$white-color;
+            margin-bottom: 13px;
+            .country{
+                display: flex;
+                align-items: center;
+                gap: 11px;
+                &-name{
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    display: inline-block;
+                }
+            }
+            .score{
+                font-size: 12px;
+                font-weight: 400;
+                padding: 2px 14px 0 14px;
+                border-radius: 2px;
+            }
+            .score-first{
+                background: rgba(255, 255, 255, 0.3);
+            }
+            .score-second{
+                background: rgba(0, 0, 0, 0.3);
+
+            }
+        }
+    
+    } 
+    .current-update{
+        display: flex;
+        align-items: center;
+        color: $white-color;
+        padding: 7px 10px 20px 10px;
+        position: relative;
+        &__content{
+            background-color:$light-blue-color;
+            border-radius: 4px;
+            padding:6px;
+            width: 82px;
+            margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            &-number{
+                font-weight: 500;
+                font-size: 16px;
+                span{
+                    font-size: 8px;
+                    display: inline-block;
+                    margin-left: 3px;
+                }
+            }
+        }
+        .btn-container{
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 34px;
+            display: flex;
+            flex-wrap: nowrap;
+            position: absolute;
+            right: 0;
+            .btn{
+                width: 69px;
+                height: 38px;
+                @include centeringByFlex;
+                gap: 4px;
+                @media screen and (max-width:374px){
+                    width: 48px;
+                }
+            }
+        }
+    }
+    
+}

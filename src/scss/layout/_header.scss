@@ -1,0 +1,52 @@
+.header{
+    // background: $blue-color;
+    padding:0 20px;
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 9px;
+        padding-bottom: 30px;
+        &__left{
+            color:$white-color;
+            font-size:10px ;
+            display: inline-block;
+            
+        }
+      
+    }
+    &-main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 34px;
+        &__left{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .myTeam{
+                font-size: 20px;
+                font-weight: 600;
+                color:$white-color;
+                text-transform: capitalize;
+            }
+        }
+        &__right{
+            display: flex;
+            gap: 20px;
+            .timer{
+                font-size: 12px;
+                font-weight: 400;
+                color:$white-color;
+                background-color:$light-blue-color;
+                padding: 5px 12px;
+                border-radius: 4px;
+                display: grid;
+                place-items: center;
+            }
+            .help{
+                display:contents;
+            }
+        }
+    }
+}

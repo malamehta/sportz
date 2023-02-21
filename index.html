@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Rohit Kumar" />
+    <meta name="description" content="Your Project Description" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sportz</title>
+    <link rel="icon" href="src/images/fevicon.png">
+    <link rel="stylesheet" href="src/css/style.css" />
+    
+  </head>
+
+  <body>
+    <!-- header-start -->
+    <header class="header container">
+      <div class="header-top" >
+        <span class="header-top__left">9:41</span>
+        <div class="header-top__right">
+           <img src="src/images/mobile-signal-icon.svg" alt="mobile-signal" loading="lazy">
+           <img src="src/images/wifi-icon.svg" alt="wifi" loading="lazy" >
+           <img src="src/images/battery-icon.svg" alt="battery" loading="lazy">
+        </div>
+      </div>
+      <div class="header-main" >
+        <div class="header-main__left">
+            <a href="#">
+                <img src="src/images/arrow-icon.svg" alt="arrow-icon" loading="lazy">
+            </a>
+            <h3 class="myTeam">My Team</h3>
+        </div>
+        <div class="header-main__right">
+            <h4 class="timer" id="time-left"></h4>
+            <a href="#" class="help">
+                <img src="src/images/help-icon.svg" alt="help" loading="lazy" height="100%" width="100%">
+            </a>
+        </div>
+      </div>
+    </header>
+    <!-- header-end -->
+    <!-- main-start -->
+    <main class="container">
+        <section class="countryWise-score">
+            <div class="countryWise-score__content">
+                <div class="country">
+                    <img src="src/images/india-flag-img.svg" alt="flag" loading="lazy">
+                    <span class="country-name">India</span>
+                </div>
+                <span class="score score-first">4</span>
+            </div>
+            <div class="countryWise-score__content">
+                <div class="country">
+                    <img src="src/images/newzeland-img.svg" alt="flag" loading="lazy">
+                    <span class="country-name">Newzeland</span>
+                </div>
+                <span class="score score-second">3</span>
+            </div>
+        </section>
+        <section class="current-update">
+            <div class="current-update__content credit-left">
+                <h3 class="current-update__content-number ">45<span>credit left</span></h3>
+                <progress class="progress" id="file" value="32" max="100"> 32% </progress>
+            </div>
+            <div class="current-update__content players">
+                <h3 class=" current-update__content-number players__number">7/11<span>players</span></h3>
+                <progress class="progress" id="file" value="32" max="100"> 32% </progress>
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-active" id="btn-list">
+                    <img src="src/images/list-icon.svg" alt="list" loading="lazy">
+                    List
+                </button>
+                <button class="btn" id="btn-pitch">
+                    <img src="src/images/pitch-icon.svg" alt="pitch" loading="lazy">
+                    pitch
+                </button>
+            </div>
+        </section>
+        <section class="list-container" id="listTable">
+           <table width="100%" class="table">
+            <tbody class="table-body">
+                <tr  class="table-head">
+                    <td >players</td>
+                    <td>points</td>
+                    <td colspan="2">credits</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="player-info">
+                            <div class="img-container">
+                              <img src="src/images/tshirt-img.svg" alt="tshirt" loading="lazy">
+                            </div> 
+                           <div>
+                              <h3 class="player-name">V kohli</h3>
+                              <h4 class="player-country">IND</h4>
+                            </div>
+                        </div>
+                    </td> 
+                    <td class="points">
+                        325.5
+                    </td> 
+                    <td class="credits">11.5</td>
+                    <td>
+                        <button class="action-btn"><img src="src/images/add-icon.svg" alt="add" loading="lazy"></button>
+                    </td>
+                </tr>
+                <tr class="row-remove">
+                    <td>
+                        <div class="player-info">
+                            <div class="img-container">
+                              <img src="src/images/tshirt-img.svg" alt="tshirt" loading="lazy">
+                            </div> 
+                           <div>
+                              <h3 class="player-name">R Sharma</h3>
+                              <h4 class="player-country">IND</h4>
+                            </div>
+                        </div>
+                    </td> 
+                    <td class="points">
+                        325.5
+                    </td> 
+                    <td class="credits">11.5</td>
+                    <td><button class="action-btn"><img src="src/images/remove-icon.svg" alt="remove" loading="lazy"></button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="player-info">
+                            <div class="img-container">
+                              <img src="src/images/tshirt-img.svg" alt="tshirt" loading="lazy">
+                            </div> 
+                           <div>
+                              <h3 class="player-name">J Neesham</h3>
+                              <h4 class="player-country">NZ</h4>
+                            </div>
+                        </div>
+                    </td> 
+                    <td class="points">
+                        325.5
+                    </td> 
+                    <td class="credits">11.5</td>
+                    <td><button class="action-btn"><img src="src/images/add-icon.svg" alt="add" loading="lazy"></button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="player-info">
+                            <div class="img-container">
+                              <img src="src/images/tshirt-img.svg" alt="tshirt" loading="lazy">
+                            </div> 
+                           <div>
+                              <h3 class="player-name">M Agarwal</h3>
+                              <h4 class="player-country">IND</h4>
+                            </div>
+                        </div>
+                    </td> 
+                    <td class="points">
+                        325.5
+                    </td> 
+                    <td class="credits">11.5</td>
+                    <td><button class="action-btn"><img src="src/images/add-icon.svg" alt="add" loading="lazy"></button></td>
+                </tr>
+                <tr class="row-remove">
+                    <td>
+                        <div class="player-info">
+                            <div class="img-container">
+                              <img src="src/images/tshirt-img.svg" alt="tshirt" loading="lazy">
+                            </div> 
+                           <div>
+                              <h3 class="player-name">M Guptill</h3>
+                              <h4 class="player-country">IND</h4>
+                            </div>
+                        </div>
+                    </td> 
+                    <td class="points">
+                        325.5
+                    </td> 
+                    <td class="credits">11.5</td>
+                    <td><button class="action-btn"><img src="src/images/remove-icon.svg" alt="remove"></button></td>
+                </tr>
+            </tbody>
+           </table>
+        </section>
+        <section class="pitch-container" id="pitch">
+            <div class="pitch-container__content" >
+                <h5 class="player-role wicket-keeper">WICKET KEEPERS</h5>
+                <div class="player-info">
+                    <div>
+                        <img src="src/images/tshirt-img.svg" alt="tshirt" loading="lazy">
+                    </div>
+                    <span class="captain">c</span>
+                    <h4 class="player-name teamA">MS Dhoni</h4>
+                    <span class="player-amount">11 Cr</span>
+                </div>
+                <h5 class="player-role batsman">batsman</h5>
+                <div class="batsman-members">
+                    <div class="player-info">
+                        <div>
+                            <img src="src/images/tshirt-img.svg" alt="tshirt" loading="lazy">
+                        </div>
+                        <h3 class="player-name teamA">R Sharma</h3>
+                        <span class="player-amount">11 Cr</span>
+                    </div>
+                    <div class="player-info">
+                        <div>
+                            <img src="src/images/black-tshirt.svg" alt="tshirt" loading="lazy">
+                        </div>
+                        <span class="captain">vc</span>
+                        <h3 class="player-name teamB">R Taylor</h3>
+                        <span class="player-amount">11 Cr</span>
+                    </div>
+                    <div class="player-info">
+                        <div>
+                            <img src="src/images/black-tshirt.svg" alt="tshirt" loading="lazy">
+                        </div>
+                        <h3 class="player-name teamB">K Williamson</h3>
+                        <span class="player-amount">11 Cr</span>
+                    </div>
+                    <div class="player-info">
+                        <div>
+                            <img src="src/images/tshirt-img.svg" alt="tshirt" loading="lazy">
+                        </div>
+                        <h3 class="player-name teamA">M Agarwal</h3>
+                        <span class="player-amount">11 Cr</span>
+                    </div>
+                    <div class="player-info">
+                        <div>
+                            <img src="src/images/tshirt-img.svg" alt="tshirt" loading="lazy">
+                        </div>
+                        <h3 class="player-name teamA">M Agarwal</h3>
+                        <span class="player-amount">11 Cr</span>
+                    </div>
+                </div>
+                <h5 class="player-role allrounder">All Rounder</h5>
+                <div class="allrounder-members">
+                    <div class="player-info">
+                        <div>
+                            <img src="src/images/black-tshirt.svg" alt="tshirt" loading="lazy">
+                        </div>
+                        <h3 class="player-name teamB">J Neesham</h3>
+                        <span class="player-amount">11 Cr</span>
+                    </div>
+                    <div class="player-info">
+                        <div>
+                            <img src="src/images/tshirt-img.svg" alt="tshirt" loading="lazy">
+                        </div>
+                        <h3 class="player-name teamA">R Jadeja</h3>
+                        <span class="player-amount">11 Cr</span>
+                    </div>
+                </div>
+                <h5 class="player-role bowler">bollerr</h5>
+                <div class="bowler-members">
+                    <div class="player-info">
+                        <div>
+                            <img src="src/images/black-tshirt.svg" alt="thsirt" loading="lazy">
+                        </div>
+                        <h3 class="player-name teamB">T Southee</h3>
+                        <span class="player-amount">11 Cr</span>
+                    </div>
+                    <div class="player-info">
+                        <div>
+                            <img src="src/images/tshirt-img.svg" alt="tshirt" loading="lazy">
+                        </div>
+                        <h3 class="player-name teamA">J Bumrah</h3>
+                        <span class="player-amount">11 Cr</span>
+                    </div>
+                    <div class="player-info">
+                        <div>
+                            <img src="src/images/black-tshirt.svg" alt="thsirt" loading="lazy">
+                        </div>
+                        <h3 class="player-name teamB">M Henry</h3>
+                        <span class="player-amount">11 Cr</span>
+                    </div>
+                    <div class="player-info">
+                        <div>
+                            <img src="src/images/tshirt-img.svg" alt="thsirt" loading="lazy">
+                        </div>
+                        <h3 class="player-name teamA">B Kumar</h3>
+                        <span class="player-amount">11 Cr</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container">
+        <button class="footer-filter">
+            <img src="src/images/filter-icon.svg" alt="filter" loading="lazy">
+            <span>3</span>
+        </button>
+        <button class="btn btn-primary">continue</button>
+    </footer>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+.footer{
+    display: flex;
+    justify-content: end;
+    padding-bottom: 20px!important;
+    padding-top: 5px;
+    // background-color: $blue-color;
+    &-filter{
+        background-color: $primary-color;
+        height: 40px;
+        width: 40px;
+        margin-right: 29px;
+        border-radius: 50%;
+        @include centeringByFlex;
+        position: relative;
+        border: none;
+        span{
+            position: absolute;
+            top: -2px;
+            right: 3px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $red-color;
+            color: $white-color;
+            font-size: 8px;
+            padding: 3px 4px 2px 4px;
+            border-radius: 50%;
+        }
+    }
+    .btn{
+        width: 158px;
+        height: 40px;
+        border-radius:4px;
+        font-size: 16px;
+        font-weight: 500;
+        &:hover{
+            background-color: $white-color;
+            color: $primary-color;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-size: 16px;
+    font-family: $primary-font;
+    font-weight: 400;
+}
+.container {
+  max-width: 375px;
+  padding: 0 10px;
+  margin: auto;
+  background-color: $blue-color;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}

@@ -1,0 +1,72 @@
+.list-container{
+    background-color:$white-color;
+    padding: 6px;
+    border-radius: 6px;
+    height: 325px;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+        width:0px;
+      }
+}
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    &-head{
+        font-size: 8px;
+        font-weight: 500;
+        color:$gray-color;
+        text-transform: capitalize;
+        background-color: #E4E4E4;
+        border-radius: 45px;
+    }
+    td{
+        padding-top: 8px;
+        padding-bottom: 6px;
+
+    }
+    .points{
+        font-size: 14px;
+        font-weight: 500;
+        color: $lightest-blue-color;
+    }
+    .credits{
+        font-size: 14px;
+        font-weight: 500;
+        color:$blue-color;
+
+    }
+}
+td:first-child {
+  border-radius: 10px 0 0 10px;
+  padding-left: 13px;
+}
+td:last-child{
+  border-radius: 0 10px 10px 0;
+  .action-btn{
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+}
+.player-info{
+    display: flex;
+    align-items: center;
+    .img-container{
+        margin-right: 15px;
+    }
+    .player-name{
+        font-weight: 500;
+        font-size: 16px;
+        color:$blue-color;
+    }
+    .player-country{
+        font-size: 12px;
+        font-weight: 400;
+        color:$lightest-blue-color;
+    }
+}
+.row-remove{
+    background-color: rgba(2, 75, 92,0.1);
+}
+

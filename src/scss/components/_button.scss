@@ -1,0 +1,16 @@
+.btn{
+    font-size: 12px;
+    font-weight: 400;
+    color: $white-color;
+    border-radius: 34px;
+    background: transparent;
+    text-transform: capitalize;
+    border: none;
+    transition: all .4s linear;
+}
+.btn-primary{
+    background-color: $primary-color;
+}
+.btn-active{
+    background-color: $primary-color;
+}
